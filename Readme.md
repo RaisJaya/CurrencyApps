@@ -1,15 +1,18 @@
 #Currency Apps
+
 Aplikasi ini mencakup fungsi pergitungan nilai tukar rupiah dengan dolar
 yang mana satu dolar dianggap senilai Rp.15.000,-
 
 ##Scop & Functionalities
+
 - User dapat memasukkan angka
 - user dapat menyentuh tombol hitung
 - User mendapat info invalid jika memasukkan text
 
 ##How does it works?
 Diawali dari method 'main window' pada class MainWindow.xaml.cs 
-'''c#
+
+'''
  public MainWindow()
         {
             InitializeComponent();
@@ -18,8 +21,9 @@ Diawali dari method 'main window' pada class MainWindow.xaml.cs
 '''
 
 Logika perhitungan terdapat pada class 'CurrencyController.cs' sebagai berikut
+
 '''c#
-public string usdToIdr(string nominal)
+         public string usdToIdr(string nominal)
         {
             var nominalDouble = Convert.ToDouble(nominal);
             var result = nominalDouble * 15000;
