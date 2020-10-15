@@ -1,10 +1,11 @@
-# Currency-Apps
+# Currency Apps
+Aplikasi kurs rupiah terhadap dolar
 Aplikasi ini mencakup fungsi untuk menentukan nilai tukar mata rupiah ke dolar. Yang mana 1 dollar dianggap bernilai Rp 15.000 
 
 ## Scope & Functionalities
 - User dapat memasukkan angka yang akan dicek
 - User dapat mengeklik tombol konversikan untuk melihat hasil
-- User mendapat info invalid jika memasukkan berupa teks/huruf karena,memang tidak di peruntukan teks
+- User mendapat info invalid jika memasukkan berupa teks
 
 ## How does it works
 Diawali dari method "MainWindow" pada class window.xaml.cs dideklarasikan dengan:
@@ -16,7 +17,8 @@ public MainWindow()
             Currency = new CurrencyController();
         }
 ```
-logika perhitungan terdapat pada CurrencyController.cs sebagai berikut:
+logika perhitungan terdapat pada CurrencyController.cs yaitu 
+sebagai berikut:
 ``` csharp
 public string usdToIdr(string nominal)
         {
@@ -25,3 +27,8 @@ public string usdToIdr(string nominal)
             return Convert.ToString(result);
         }
 ```
+
+```
+TERIMAKASIH
+```
+
